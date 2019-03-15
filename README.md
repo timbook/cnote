@@ -2,7 +2,13 @@
 `cnote` is a simple command line utility for taking quick notes.
 
 ## Installation
-I will write a makefile once I learn how to do so. In the meantime, the program is simple enough:
+Simply run
+
+```bash
+make
+```
+
+Or, since the program is simple enough, simply run:
 
 ```bash
 gcc cnote.c -o cnote
@@ -40,6 +46,5 @@ cnote -d filename
 Note files are markdown files, but you should never actually type .md when using cnote.
 
 ## TODO
-* Implement make.
 * Move functions into header files, maybe.
 * Add an "archiving" system so notes aren't really deleted.
