@@ -17,7 +17,7 @@ gcc cnote.c -o cnote
 And then move the resulting executable to anywhere on your enivornment path. I put mine in ~/bin.
 
 ## Usage
-`cnote` stores your notes in `$HOME/.cnotes`. Notes are opened in whatever `$EDITOR` is in your environment. I recommend vim because what else would you use?!
+`cnote` stores your notes in `$HOME/.cnotes`. Notes are opened in whatever `$EDITOR` is in your environment. If there is no `$EDITOR` environment variable, `vim` is default. I recommend vim anyway because what else would you use?!
 
 To list the available note files, simply type
 

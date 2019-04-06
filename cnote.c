@@ -80,7 +80,11 @@ int check_arg(char* opt, char* short_opt, char* long_opt)
 
 void edit_file(char* notes_dir, char* note_file)
 {
-    char* editor = getenv("EDITOR");
+    char* editor;
+    if ( !(editor = getenv("EDITOR")) ) {
+        editor = "vim";
+    }
+    
     char file_loc[256];
     char cmd[128];
 
